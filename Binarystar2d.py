@@ -1,13 +1,17 @@
+## This program can also be used for n body gravitations simulation using verlet integrators
+
+
 import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib.animation import FuncAnimation
+from matplotlib.animation import FuncAnimation  
 
 
-N=2
-m=np.array([10.0,10.0]) # kg
-r=np.array([[4.0,96.0],[4.0,100.0]],float) # m
-v=np.array([[-1.054,-0.556],[1.054,-0.556]],float) # m/s^2
-G=1
+## Please note that datas of each body must be entered , they are not generated automatically
+N=2 # Enter no. of bodies here
+m=np.array([10.0,10.0]) # kg            ## Enter the masses here (For N bodies)
+r=np.array([[4.0,96.0],[4.0,100.0]],float) # m           ## Enter positions of each body here 
+v=np.array([[-1.054,-0.556],[1.054,-0.556]],float) # m/s^2 ## Enter velocities of each body here
+G=1 # Exaggeration
 dt=0.1
 tmax=10000
 
